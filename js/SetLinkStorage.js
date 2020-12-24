@@ -5,8 +5,8 @@ var json_se_Obj = JSON.parse(json_se);
 function getFrom() {
 	// var name_arr = new Array();
 	// var url_arr = new Array();
-	var name_arr = [link_webs.name0, link_webs.name1, link_webs.name2, link_webs.name3, link_webs.name4, link_webs.name5,
-		link_webs.name6, link_webs.name7, link_webs.name8, link_webs.name9,
+	var name_arr = [link_webs.web_name0, link_webs.web_name1, link_webs.web_name2, link_webs.web_name3, link_webs.web_name4, link_webs.web_name5,
+		link_webs.web_name6, link_webs.web_name7, link_webs.web_name8, link_webs.web_name9,
 	];
 	var url_arr = [link_webs.url0, link_webs.url1, link_webs.url2, link_webs.url3, link_webs.url4, link_webs.url5,
 		link_webs.url6, link_webs.url7, link_webs.url8, link_webs.url9,
@@ -17,6 +17,7 @@ function getFrom() {
 	var data = new Array();
 	while (i < 10) {
 		if (name_arr[i]) {//判断是否存在
+			// console.log(link_webs.web_name0.value);
 			if (name_arr[i].value != "" || url_arr[i].value != "") {//判断值是否为空
 				var name = name_arr[i].value;
 				var url = url_arr[i].value;
@@ -97,7 +98,7 @@ function addLink() {
 		img.src = "./img/new.png";
 		input1.className = "link_title";
 		input1.type = "text";
-		var input1_name = "name" + exit_links_number;
+		var input1_name = "web_name" + exit_links_number;
 		input1.name = input1_name;
 		input1.placeholder = "填写网址标题";
 		var input2_name = "url" + exit_links_number;

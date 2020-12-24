@@ -549,6 +549,11 @@ form {
 	float: left;
 }
 
+.link_li input,
+.link_li2 input{
+	height: 40px;
+}
+
 .set_link_img {
 	width: 12px !important;
 	height: 12px !important;
