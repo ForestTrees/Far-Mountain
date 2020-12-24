@@ -2,4 +2,4 @@
 var notice_id = "20201223";//id编号，通产为发布日期
 var notice_passage = "1、增加了天气功能，可显示当前天气、温度与当天最高最低温度;<br>2、对天气数据动态监听，完成加载后显示"//小贴士内容
 
-var release = "beta 0.2.5"//当前版本
+var release = "beta 0.2.7"//当前版本
