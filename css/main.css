@@ -709,6 +709,8 @@ button:focus {
 	top: 30px;
 	left: 40px;
 	color: white;
+	cursor: default;
+	/* display: none; */
 	
 	opacity: 0;
 	transition: 1s;
@@ -751,4 +753,37 @@ button:focus {
 	float: left;
 	line-height: 56px;
 	margin-left: 12px;
+}
+.weather_forcast_list{
+	overflow: hidden;
+	padding: 0 5%;
+	line-height: 40px;
+	/* border-bottom: solid 1px white; */
+}
+.weather_forcast_list span{
+	display: block;
+	float: left;
+}
+.weather_forcast_date{
+	width: 25%;
+}
+.weather_forcast_week{
+	text-align: center;
+	width: 15%;
+}
+.weather_forcast_type{
+	text-align: center;
+	width: 40%;
+}
+.weather_forcast_temp{
+	text-align: right;
+	width: 20%;
+}
+.weather_modal-content{
+	color: white;
+	/* background-image: url(../img/weather_bg.png);*/
+	background-color: #30466f;
+	background-size: cover;
+	
+	padding: 20px 0px;
 }

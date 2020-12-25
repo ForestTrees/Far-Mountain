@@ -509,12 +509,10 @@
 			</div>
 		</div>
 
-		<div id="bdMapBox" style="display:none;"></div>
+		<!-- <div id="bdMapBox" style="display:none;"></div> -->
 		<!-- <div id="bdMapBox2" style="width: 0;height: 0;overflow: hidden;"></div> -->
-		<script>
-
-		</script>
-		<div class="weather" id="weather">
+<div id="weather_forvue">
+		<div class="weather" id="weather"  data-toggle="modal" data-target="#weather_forcast">
 			<div class="weather_left">
 				<div class="weather_out">
 					<img src="" id="weather_img" />
@@ -528,17 +526,58 @@
 				{{cityName}}
 			</div>
 		</div>
-
+		
+		<!-- 天气预报 -->
+		<div class="modal fade" id="weather_forcast">
+			<div class="modal-dialog">
+				<div class="modal-content weather_modal-content">
+					<!-- 模态框头部 -->
+					<!-- <div class="modal-header">
+						<h4 class="modal-title">未来一周天气预报</h4>
+					</div> -->
+		
+					<!-- 模态框主体 -->
+					<div class="modal-body">
+						<p style="text-align: center;font-size: 60px;line-height: 60px;margin: 0px;">
+							{{temp}} <span style="font-size: 18px;position: relative;bottom: 27px;">℃ </span> 
+						</p>
+						<p style="text-align: center;margin: 0;line-height: 20px;">
+							{{temp_high}}℃ <span style="color: #a7a7a7;">/ {{temp_low}}℃</span> 
+						</p>
+						<p style="text-align: center;line-height: 20px;">
+							{{type}} &nbsp;&nbsp;  {{cityName}}
+						</p>
+						<ul>
+							<li v-for="item in forcastList" class="weather_forcast_list">
+								<span class="weather_forcast_date">{{item.date}}</span>
+								<span class="weather_forcast_week">{{item.week}}</span>
+								<span class="weather_forcast_type">{{item.text_day}}</span>
+								<span class="weather_forcast_temp">{{item.high}}℃ / {{item.low}}℃</span>
+							</li>
+						</ul>
+					</div>
+		
+					<!-- 模态框底部 -->
+					<!-- <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+					</div> -->
+		
+				</div>
+			</div>
+		</div>
+</div>
 		<script type="text/javascript">
 			// 百度地图API功能
 			new Vue({
-				el: '#weather',
+				el: '#weather_forvue',
 				data: {
 					cityName:'',
 					type: '',
 					temp: '',
 					temp_low: '',
 					temp_high: '',
+					
+					forcastList:[]
 					// localCity: cityName,
 					// weatherList: []
 				},
@@ -573,7 +612,10 @@
 							that.temp = response.data.result.now.temp;
 							that.temp_low = response.data.result.forecasts[0].low;
 							that.temp_high = response.data.result.forecasts[0].high;
-
+							
+							that.forcastList = response.data.result.forecasts;
+							
+							$(".weather").css("cursor", "pointer");
 							$(".weather").css("opacity", "1");
 						})
 						.catch(function(error) { // 请求失败处理
