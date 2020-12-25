@@ -1,8 +1,9 @@
 div::-webkit-scrollbar {
-  width: 0;
+	width: 0;
 }
+
 html {
-	overflow: hidden!important;
+	overflow: hidden !important;
 }
 
 body {
@@ -21,16 +22,18 @@ ul {
 li {
 	list-style: none;
 }
+
 /* 信息提示框 */
-.alert_contont{
+.alert_contont {
 	width: 100%;
 	position: absolute;
 	top: -50px;
 	opacity: 0;
-	
+
 	z-index: 1052;
 }
-.alert{
+
+.alert {
 	width: 1000px;
 	margin: 0 auto;
 }
@@ -550,7 +553,7 @@ form {
 }
 
 .link_li input,
-.link_li2 input{
+.link_li2 input {
 	height: 40px;
 }
 
@@ -587,7 +590,8 @@ form {
 	outline: none;
 }
 
-.link_delete,.link_delete2 {
+.link_delete,
+.link_delete2 {
 	width: 24px;
 	height: 24px;
 	border: none;
@@ -597,7 +601,9 @@ form {
 	background-color: white;
 	cursor: pointer;
 }
-.link_delete:hover ,.link_delete2:hover{
+
+.link_delete:hover,
+.link_delete2:hover {
 	background-color: rgb(239, 239, 239);
 }
 
@@ -605,7 +611,8 @@ button:focus {
 	outline: none;
 }
 
-.link_delete svg ,.link_delete2 svg{
+.link_delete svg,
+.link_delete2 svg {
 	position: relative;
 	top: -11px;
 }
@@ -651,97 +658,108 @@ button:focus {
 /* 底部版权结束 */
 
 /* 通知公告 */
-.announcement{
+.announcement {
 	width: 200px;
 	/* height: 30px; */
 	/* line-height: 30px; */
-	
+
 	border-radius: 3px;
-	background-color: rgba(255,255,255,0.5);
-	
+	background-color: rgba(255, 255, 255, 0.5);
+
 	position: absolute;
 	bottom: 80px;
 	right: 20px;
-	
+
 	overflow: hidden;
-	
+
 	opacity: 0;
 	display: none;
-	
+
 	transition: 0.3s;
-	
+
 }
-.con_announcement{
+
+.con_announcement {
 	padding: 10px 10px;
 	position: relative;
 	overflow: hidden;
 }
-.close_announcement{
+
+.close_announcement {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0, 0, 0, 0.6);
 	top: 0;
 	left: 0;
 	cursor: pointer;
 	opacity: 0;
 	color: white;
 	text-align: center;
-	
+
 	transition: 0.3s;
 }
-.announcement:hover .close_announcement{
+
+.announcement:hover .close_announcement {
 	opacity: 1;
 }
-.announcement h6{
+
+.announcement h6 {
 	font-weight: bold;
 	font-size: 16px;
 }
-.announcement p{
+
+.announcement p {
 	margin: 0;
 	font-size: 14px;
 }
 
 
 /* 天气信息 */
-.weather{
+.weather {
 	position: absolute;
 	top: 30px;
 	left: 40px;
 	color: white;
 	cursor: default;
 	/* display: none; */
-	
+
 	opacity: 0;
 	transition: 1s;
 }
-.weather_left{
+
+.weather_left {
 	float: left;
 	padding-right: 12px;
 	border-right: solid 1px white;
 }
-.weather_out{
+
+.weather_out {
 	height: 30px;
 	line-height: 30px;
 }
-#weather_img{
+
+#weather_img {
 	height: 30px;
 	float: left;
 	/* margin: 3px 0px; */
 }
-.weather_type{
+
+.weather_type {
 	font-size: 24px;
 	display: block;
 	padding-left: 10px;
 	float: left;
 }
-.weather_c{
+
+.weather_c {
 	font-size: 14px;
 	display: block;
 	float: left;
 	padding-left: 4px;
 }
-.forcast{
+
+.forcast {
 	font-size: 12px;
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -749,41 +767,60 @@ button:focus {
 	color: rgb(222, 214, 214);
 	margin-bottom: 0px;
 }
-.weather_right{
+
+.weather_right {
 	float: left;
 	line-height: 56px;
 	margin-left: 12px;
 }
-.weather_forcast_list{
+
+.weather_forcast_list {
 	overflow: hidden;
 	padding: 0 5%;
 	line-height: 40px;
 	/* border-bottom: solid 1px white; */
 }
-.weather_forcast_list span{
+
+.weather_forcast_list span {
 	display: block;
 	float: left;
 }
-.weather_forcast_date{
+
+.weather_forcast_date {
 	width: 25%;
 }
-.weather_forcast_week{
+
+.weather_forcast_week {
 	text-align: center;
 	width: 15%;
 }
-.weather_forcast_type{
+
+.weather_forcast_type {
 	text-align: center;
 	width: 40%;
 }
-.weather_forcast_temp{
+
+.weather_forcast_temp {
 	text-align: right;
 	width: 20%;
 }
-.weather_modal-content{
+
+.weather_modal-content {
 	color: white;
 	/* background-image: url(../img/weather_bg.png);*/
 	background-color: #30466f;
 	background-size: cover;
-	
+
 	padding: 20px 0px;
+}
+
+.weather_uptime {
+	text-align: center;
+	font-size: 12px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	margin: 0;
+	bottom: -20px;
+	color: #ffffff2b;
 }

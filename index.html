@@ -555,6 +555,10 @@
 								<span class="weather_forcast_temp">{{item.high}}℃ / {{item.low}}℃</span>
 							</li>
 						</ul>
+						
+						<p class="weather_uptime">
+							更新于：{{uptime}}
+						</p>
 					</div>
 		
 					<!-- 模态框底部 -->
@@ -576,6 +580,7 @@
 					temp: '',
 					temp_low: '',
 					temp_high: '',
+					uptime:'',
 					
 					forcastList:[]
 					// localCity: cityName,
@@ -612,6 +617,10 @@
 							that.temp = response.data.result.now.temp;
 							that.temp_low = response.data.result.forecasts[0].low;
 							that.temp_high = response.data.result.forecasts[0].high;
+							
+							var uptimeold = response.data.result.now.uptime;
+							
+							that.uptime = uptimeold.substr(8,2 )+":"+uptimeold.substr(10,2 );
 							
 							that.forcastList = response.data.result.forecasts;
 							
