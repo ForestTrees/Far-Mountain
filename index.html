@@ -1,150 +1,154 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>远山起始页</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="./img/16051011186273.png" type="image/x-icon" />
-		<!-- <link rel="icon" type="image/png" sizes="144x144" href="./img/icon.png"/> -->
-		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		<!-- VUE -->
-		<script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
-		<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
-		<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jrgHtQ4HpEri7Ac2ay934RfQcMTNGCTl"></script> -->
+<head>
+    <title>远山起始页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/16051011186273.png" type="image/x-icon" />
+    <!-- <link rel="icon" type="image/png" sizes="144x144" href="./img/icon.png"/> -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-		<!-- <script src="http://api.map.baidu.com/location/ip?ak=jrgHtQ4HpEri7Ac2ay934RfQcMTNGCTl&coor=bd09ll"></script> -->
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- VUE -->
+    <script src="https://cdn.staticfile.org/vue/2.4.2/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+    <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jrgHtQ4HpEri7Ac2ay934RfQcMTNGCTl"></script> -->
 
-		<!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
-		<script src="./js/FirstUsing.js"></script>
-		<script src="./js/main.js"></script>
-		<script src="./js/localStorage.js"></script>
-		<script src="./js/ReadStorage.js"></script>
-		<script src="./js/SetLinkStorage.js"></script>
-		<script src="./js/alert.js"></script>
-		<script src="./js/config.js"></script>
-		<script src="./js/weather.js"></script>
+    <!-- <script src="http://api.map.baidu.com/location/ip?ak=jrgHtQ4HpEri7Ac2ay934RfQcMTNGCTl&coor=bd09ll"></script> -->
+
+    <!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="./js/FirstUsing.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/localStorage.js"></script>
+    <script src="./js/ReadStorage.js"></script>
+    <script src="./js/SetLinkStorage.js"></script>
+    <script src="./js/alert.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/weather.js"></script>
 
 
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 
-	</head>
-	<!-- https://www.bing.com/th?id=OHR.PRookery_ZH-CN2608300981_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=HpEdgeAn -->
-	<!-- bing图片接口：http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1 -->
-	<body>
+</head>
+<!-- https://www.bing.com/th?id=OHR.PRookery_ZH-CN2608300981_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=HpEdgeAn -->
+<!-- bing图片接口：http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1 -->
 
-		<div class="alert_contont max_limit">
-			<div class="alert alert-info">
-				<strong>您好!</strong> 您可以最多添加10个网址链接。
-			</div>
-		</div>
+<body>
 
-		<div class="alert_contont webchack">
-			<div class="alert alert-info">
-				<strong>您好!</strong> 请输入以“https://”或“http://”开头的网址。
-			</div>
-		</div>
+    <div class="alert_contont max_limit">
+        <div class="alert alert-info">
+            <strong>您好!</strong> 您可以最多添加10个网址链接。
+        </div>
+    </div>
 
-		<!-- <div class="alert_contont announcement">
+    <div class="alert_contont webchack">
+        <div class="alert alert-info">
+            <strong>您好!</strong> 请输入以“https://”或“http://”开头的网址。
+        </div>
+    </div>
+
+    <!-- <div class="alert_contont announcement">
 			<div class="alert alert-dark">
 				  <strong>公告</strong> 我们刚刚新增了这个公告栏，会偶尔给您介绍一下新功能，希望您能够喜欢~
 			</div>
 		</div> -->
 
-		<!-- 通知公告 -->
-		<div class="announcement">
-			<div class="con_announcement">
-				<h6>小贴士</h6>
-				<p>
-					<script> document.write(notice_passage);</script>
-				</p>
-				<div class="close_announcement">
-					我知道啦~点击关闭
-				</div>
-			</div>
-		</div>
+    <!-- 通知公告 -->
+    <div class="announcement">
+        <div class="con_announcement">
+            <h6>小贴士</h6>
+            <p>
+                <script>
+                    document.write(notice_passage);
+                </script>
+            </p>
+            <div class="close_announcement">
+                我知道啦~点击关闭
+            </div>
+        </div>
+    </div>
 
 
 
-		<!-- <img class="background_img" src="http://bing.getlove.cn/bingImage" /> -->
-		<img class="background_img" src="https://open.saintic.com/api/bingPic/" />
+    <!-- <img class="background_img" src="http://bing.getlove.cn/bingImage" /> -->
+    <img class="background_img" src="https://open.saintic.com/api/bingPic/" />
 
-		<div class="cover"></div>
+    <div class="cover"></div>
 
-		<div class="search">
-			<!-- 百度：https://www.baidu.com/s；name=wd -->
-			<!-- bing：https://cn.bing.com/search；name=q -->
-			<form id="search_form" action="https://www.baidu.com/s">
-				<div class="search_logo_list" id="search_logo_list">
-					<div class="search_logo_list_mov">
-						<img id="search_logo" src="./img/baidu.png" data-toggle="collapse" data-target="#radio" />
-						<img id="search_logo" src="./img/Bing.png" data-toggle="collapse" data-target="#radio" />
-						<img id="search_logo" src="./img/Google.png" data-toggle="collapse" data-target="#radio" />
-					</div>
-				</div>
+    <div class="search">
+        <!-- 百度：https://www.baidu.com/s；name=wd -->
+        <!-- bing：https://cn.bing.com/search；name=q -->
+        <form id="search_form" action="https://www.baidu.com/s">
+            <div class="search_logo_list" id="search_logo_list">
+                <div class="search_logo_list_mov">
+                    <img id="search_logo" src="./img/baidu.png" data-toggle="collapse" data-target="#radio" />
+                    <img id="search_logo" src="./img/Bing.png" data-toggle="collapse" data-target="#radio" />
+                    <img id="search_logo" src="./img/Google.png" data-toggle="collapse" data-target="#radio" />
+                </div>
+            </div>
 
-				<div class="search_select">
-					<ul>
-						<li id="search_baidu">百度</li>
-						<li id="search_bing">必应</li>
-						<li id="search_google">Google</li>
-					</ul>
-				</div>
+            <div class="search_select">
+                <ul>
+                    <li id="search_baidu">百度</li>
+                    <li id="search_bing">必应</li>
+                    <li id="search_google">Google</li>
+                </ul>
+            </div>
 
-				<input id="search" type="search" name="wd" class="search_input" placeholder="" autocomplete="">
-				<label class="search_btn" for="search_submit"></label>
-				<button id="search_submit" type="submit" style="display: none;"></button>
-			</form>
-		</div>
+            <input id="search" type="search" name="wd" class="search_input" placeholder="" autocomplete="">
+            <label class="search_btn" for="search_submit"></label>
+            <button id="search_submit" type="submit" style="display: none;"></button>
+        </form>
+    </div>
 
-		<div class="webs">
-			<script>
-				// $(document).ready(function() {
-					var json_se = localStorage.getItem("Link");
-					var json_se_Obj = JSON.parse(json_se);
-					
-					for(var i=0;i<json_se_Obj.length;i++){
-						// for(var i=0;i<4;i++){
-						// console.log(json_se_Obj[i].name);
-						// var html2='12312123';
-						// var title=json_se_Obj.name;
-						// var url=json_se_Obj.url;
-						// var favicon=json_se_Obj.favicon;
-						
-						// console.warn(json_se_Obj[2]);
-						
-						var html='\
+    <div class="webs">
+        <script>
+            // $(document).ready(function() {
+            var json_se = localStorage.getItem("Link");
+            var json_se_Obj = JSON.parse(json_se);
+
+            for (var i = 0; i < json_se_Obj.length; i++) {
+                // for(var i=0;i<4;i++){
+                // console.log(json_se_Obj[i].name);
+                // var html2='12312123';
+                // var title=json_se_Obj.name;
+                // var url=json_se_Obj.url;
+                // var favicon=json_se_Obj.favicon;
+
+                // console.warn(json_se_Obj[2]);
+
+                var html = '\
 						<a href=\
-						'+ json_se_Obj[i].url +
-						'\
+						' + json_se_Obj[i].url +
+                    '\
 						class="webs_li" title=\
-						'+ json_se_Obj[i].name +
-						'\
+						' + json_se_Obj[i].name +
+                    '\
 						data-toggle="tooltip" data-placement="bottom">\
 							<div class="webs_li_content">\
 								<i><img src=\
-								'+ json_se_Obj[i].favicon +
-								'\
+								' + json_se_Obj[i].favicon +
+                    '\
 								onerror="this.src=\'./img/new.png\';this.οnerrοr=null"/></i>\
 							</div>\
 							<div class="webs_li_content">\
 								<i><img src=\
-								'+ json_se_Obj[i].favicon +
-								'\
+								' + json_se_Obj[i].favicon +
+                    '\
 								onerror="this.src=\'./img/new.png\';this.οnerrοr=null"/></i>\
 							</div>\
 						</a>\
 						';
-						
-						document.writeln(html);
-					}
-			</script>
-			<!-- <a href="https://www.bilibili.com/" target="_blank" class="webs_li" title="bilibili" data-toggle="tooltip"data-placement="bottom">
+
+                document.writeln(html);
+            }
+        </script>
+        <!-- <a href="https://www.bilibili.com/" target="_blank" class="webs_li" title="bilibili" data-toggle="tooltip"data-placement="bottom">
 				<div class="webs_li_content">
 					<i><img src="https://www.bilibili.com/favicon.ico" /></i>
 				</div>
@@ -218,7 +222,7 @@
 					<i><img src="https://www.aliyun.com/favicon.ico" /></i>
 				</div>
 			</a>-->
-			<!-- <a href="https://v.qq.com/" target="_blank" class="webs_li" title="腾讯视频" data-toggle="tooltip" data-placement="bottom">
+        <!-- <a href="https://v.qq.com/" target="_blank" class="webs_li" title="腾讯视频" data-toggle="tooltip" data-placement="bottom">
 				<div class="webs_li_content">
 					<i><img src="https://v.qqqqq.com/favicon.ico" onerror="this.src='./img/new.png'"/></i>
 				</div>
@@ -226,57 +230,83 @@
 					<i><img src="https://v.qq.com/favicon.ico" /></i>
 				</div>
 			</a> -->
-		</div>
+    </div>
 
-		<div class="word">
-			<p class="word_p">海内存知己，天涯若比邻</p>
-		</div>
+    <div class="word" id="word_forvue">
+        <p class="word_p">{{sentence}}</p>
+    </div>
 
-		<div class="setting">
-			<ul>
-				<li class="setting_contant">
-					<a href="#" id="setting_logo"><img src="./img/setting.png" /></a>
-					<ul class="setting_lists">
-						<a href="#" data-toggle="modal" data-target="#Config">
-							<li>常规设置</li>
-						</a>
-						<a href="#" data-toggle="modal" data-target="#Donate">
-							<li>赞助我</li>
-						</a>
-						<a href="#" data-toggle="modal" data-target="#Link">
-							<li>常用网址</li>
-						</a>
-						<a href="#" data-toggle="modal" data-target="#Suggest">
-							<li>帮助</li>
-						</a>
-						<a href="#" data-toggle="modal" data-target="#About">
-							<li>关于</li>
-						</a>
-						<!-- 						<a href="#" data-toggle="modal" data-target="#Update">
+    <script type="text/javascript">
+        // 百度地图API功能
+        new Vue({
+            el: '#word_forvue',
+            data: {
+                sentence: '',
+            },
+            mounted: function() {
+                var that = this;
+
+                axios
+
+                    .get('http://foresttrees.cn/getsentence.php')
+                    .then(function(response) {
+                        console.log(response.data);
+                        that.sentence = response.data;
+
+
+                    })
+                    .catch(function(error) { // 请求失败处理
+                        console.log(error);
+                    });
+            }
+        })
+    </script>
+
+    <div class="setting">
+        <ul>
+            <li class="setting_contant">
+                <a href="#" id="setting_logo"><img src="./img/setting.png" /></a>
+                <ul class="setting_lists">
+                    <a href="#" data-toggle="modal" data-target="#Config">
+                        <li>常规设置</li>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#Donate">
+                        <li>赞助我</li>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#Link">
+                        <li>常用网址</li>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#Suggest">
+                        <li>帮助</li>
+                    </a>
+                    <a href="#" data-toggle="modal" data-target="#About">
+                        <li>关于</li>
+                    </a>
+                    <!-- 						<a href="#" data-toggle="modal" data-target="#Update">
 							<li>更新日志</li>
 						</a> -->
-					</ul>
-				</li>
-			</ul>
-		</div>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
-		<!-- 常用网址 Link-->
-		<div class="modal fade" id="Link">
-			<div class="modal-dialog">
-				<div class="modal-content">
+    <!-- 常用网址 Link-->
+    <div class="modal fade" id="Link">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-					<!-- 模态框头部 -->
-					<div class="modal-header">
-						<h4 class="modal-title">常用网址设置</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">常用网址设置</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
 
-					<!-- 模态框主体 -->
+                <!-- 模态框主体 -->
 
-					<div class="modal-body">
-						<ul>
-							<form name="link_webs" id="dom_add">
-								<!-- 						<li class="link_li">
+                <div class="modal-body">
+                    <ul>
+                        <form name="link_webs" id="dom_add">
+                            <!-- 						<li class="link_li">
 									<img src="img/new.png" />
 									<input class="link_title" type="text" name="name5" value="test" autocomplete="off" />
 									<input class="link_url" type="text" name="url5" value="testurl" autocomplete="off" />
@@ -284,361 +314,363 @@
 										<img src="./img/delete.png" style="width: 12px;height: 12px;margin: 0;" />
 									</div>
 								</li> -->
-								<script>
-									// $(document).ready(function() {
-									var json_se = localStorage.getItem("Link");
-									var json_se_Obj = JSON.parse(json_se);
-									
-									for(var i=0;i<json_se_Obj.length;i++){
-										var html2 ='\
+                            <script>
+                                // $(document).ready(function() {
+                                var json_se = localStorage.getItem("Link");
+                                var json_se_Obj = JSON.parse(json_se);
+
+                                for (var i = 0; i < json_se_Obj.length; i++) {
+                                    var html2 = '\
 										<li class="link_li">\
 											<img src=\
-											'+ json_se_Obj[i].favicon +
-											'\
+											' + json_se_Obj[i].favicon +
+                                        '\
 											onerror="this.src=\'./img/new.png\';this.οnerrοr=null"/>\
 											<input class="link_title" type="text" name=\
-											'+ 'web_name' +i+
-											'\
+											' + 'web_name' + i +
+                                        '\
 											value=\
-											 '+ json_se_Obj[i].name +
-											 '\
+											 ' + json_se_Obj[i].name +
+                                        '\
 											 autocomplete="off"/>\
 											<input class="link_url" type="text" name=\
-											 '+ 'url' +i+
-											 '\
+											 ' + 'url' + i +
+                                        '\
 											 value=\
-											 '+ json_se_Obj[i].url+
-											 '\
+											 ' + json_se_Obj[i].url +
+                                        '\
 											 autocomplete="off"/>\
 											<div class="link_delete">\
 												<img src="./img/delete.png" style="width: 12px;height: 12px;margin: 0;"/>\
 											</div>\
 										</li>\
 										';
-										
-										
-										document.writeln(html2);
-									}
-							</script>
-
-							</form>
-
-						</ul>
-					</div>
-
-					<!-- 模态框底部 -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-success" onclick="addLink()">添加</button>
-						<button type="button" class="btn btn-info" onclick="getFrom()">保存</button>
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<!-- 模态框 About-->
-		<div class="modal fade" id="About">
-			<div class="modal-dialog">
-				<div class="modal-content">
-
-					<!-- 模态框头部 -->
-					<div class="modal-header">
-						<h4 class="modal-title">关于「远山起始页」</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-
-					<!-- 模态框主体 -->
-					<div class="modal-body">
-						「远山起始页」是一款由<b>山林小树</b>独立开发的浏览器起始页。<br><br>
-						简洁、大气、高效、自定义强是我竭尽全力追求的理念，也是设计这款起始页的初衷。<br><br>
-						当前版本：<script>document.write(release);</script>
-					</div>
-
-					<!-- 模态框底部 -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="Alert">
-			<div class="modal-dialog">
-				<div class="modal-content" style="background-color:rgba(0,0,0,0);">
-					<div class="alert alert-secondary">
-						 <strong>抱歉!</strong> 该功能正在开发过程中
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="Donate">
-			<div class="modal-dialog">
-				<div class="modal-content" style="">
-					<!-- 模态框头部 -->
-					<div class="modal-header">
-						<h4 class="modal-title">捐助</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-
-					<!-- 模态框主体 -->
-					<div class="modal-body">
-						大家好，我是远山的开发者山林小树，目前我还是一名在校大学生，为了维护远山，每个月都会支付高昂的服务器费用等，
-						您的支持将是我不断更新与维护的最大动力！<br><br>
-						<img src="./img/alipay.jpg" class="pay_img" />
-						<img src="./img/wechatpay.png" class="pay_img" />
-					</div>
-
-					<!-- 模态框底部 -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="Update">
-			<div class="modal-dialog">
-				<div class="modal-content" style="">
-					<!-- 模态框头部 -->
-					<div class="modal-header">
-						<h4 class="modal-title">更新日志</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-
-					<!-- 日志主体 -->
-					<div class="modal-body">
-						<h6>#Alpha 0.1.3</h6>
-						20201019 完成了“历史记录”、“流畅模式”的设置，增加用户首次使用的判断。
-						<hr />
-
-						<h6>#Alpha 0.1.2</h6>
-						20201012 可自由切换百度、bing、Google的搜索引擎，并开始使用localStorage存储用户的设置信息。
-						<hr />
-
-						<h6>#Alpha 0.1.1</h6>
-						20201006 页面前端样式设计开发完成，一个静态的起始页已经成型，包含了百度、bing、Google三款搜索引擎，快速链接
-						，每日金句，响应式设计以及更多的细节动画，和最基本的设置窗口。
-						<hr />
-
-						<h6>#Alpha 0.1.0</h6>
-						20201005 脑袋萌生了我要做一款浏览器起始页的想法。2020年10月05日，梦想开始的地方。
-					</div>
-
-					<!-- 模态框底部 -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="modal fade" id="Suggest">
-			<div class="modal-dialog">
-				<div class="modal-content" style="">
-					<!-- 模态框头部 -->
-					<div class="modal-header">
-						<h4 class="modal-title">帮助</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-
-					<!-- 模态框主体 -->
-					<div class="modal-body">
-						<h6>出现卡顿</h6>
-						如果您的页面再完成一些动画时，出现卡顿现象，请在常规设置中打开“低性能模式”。
-						<hr />
-						<h6>如何设置为浏览器默认新界面</h6>
-						浏览器-设置-新标签页，将本站添加进去就可以了。
-					</div>
-
-					<!-- 模态框底部 -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<!-- 常规设置主体 -->
-		<div class="modal fade" id="Config">
-			<div class="modal-dialog">
-				<div class="modal-content" style="">
-					<!-- 模态框头部 -->
-					<div class="modal-header">
-						<h4 class="modal-title">常规设置</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div>
-
-					<!-- 模态框主体 -->
-					<div class="modal-body">
-						<div class="config_out" id="config_fluency">
-							<h6>流畅模式</h6>
-							<div class="config_box">
-								<span></span>
-							</div>
-						</div>
-						关闭后，点击搜索框后不再有背景虚化，如果您的页面再完成一些动画时，出现卡顿现象，请在常规设置中打开“流畅模式”。
-						<hr />
-
-						<div class="config_out" id="config_history">
-							<h6>搜索历史</h6>
-							<div class="config_box">
-								<span></span>
-							</div>
-						</div>
-						搜索框下可记录搜索历史，能够手动清除，也可以永久关闭。
-						<hr />
 
 
-						<h6>如何设置为浏览器默认新界面</h6>
-						浏览器-设置-新标签页，将本站添加进去就可以了。
-					</div>
+                                    document.writeln(html2);
+                                }
+                            </script>
 
-					<!-- 模态框底部 -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
-					</div>
+                        </form>
 
-				</div>
-			</div>
-		</div>
+                    </ul>
+                </div>
 
-		<!-- <div id="bdMapBox" style="display:none;"></div> -->
-		<!-- <div id="bdMapBox2" style="width: 0;height: 0;overflow: hidden;"></div> -->
-<div id="weather_forvue">
-		<div class="weather" id="weather"  data-toggle="modal" data-target="#weather_forcast">
-			<div class="weather_left">
-				<div class="weather_out">
-					<img src="" id="weather_img" />
-					<!-- <span class="weather_type"> {{type}} </span> -->
-					<span class="weather_type"> {{temp}} </span>
-					<span class="weather_c">℃</span>
-				</div>
-				<p class="forcast">{{temp_low}}℃-{{temp_high}}℃</p>
-			</div>
-			<div class="weather_right">
-				{{cityName}}
-			</div>
-		</div>
-		
-		<!-- 天气预报 -->
-		<div class="modal fade" id="weather_forcast">
-			<div class="modal-dialog">
-				<div class="modal-content weather_modal-content">
-					<!-- 模态框头部 -->
-					<!-- <div class="modal-header">
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="addLink()">添加</button>
+                    <button type="button" class="btn btn-info" onclick="getFrom()">保存</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 模态框 About-->
+    <div class="modal fade" id="About">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">关于「远山起始页」</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    「远山起始页」是一款由<b>山林小树</b>独立开发的浏览器起始页。<br><br> 简洁、大气、高效、自定义强是我竭尽全力追求的理念，也是设计这款起始页的初衷。
+                    <br><br> 当前版本：
+                    <script>
+                        document.write(release);
+                    </script>
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Alert">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color:rgba(0,0,0,0);">
+                <div class="alert alert-secondary">
+                    <strong>抱歉!</strong> 该功能正在开发过程中
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Donate">
+        <div class="modal-dialog">
+            <div class="modal-content" style="">
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">捐助</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    大家好，我是远山的开发者山林小树，目前我还是一名在校大学生，为了维护远山，每个月都会支付高昂的服务器费用等， 您的支持将是我不断更新与维护的最大动力！
+                    <br><br>
+                    <img src="./img/alipay.jpg" class="pay_img" />
+                    <img src="./img/wechatpay.png" class="pay_img" />
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Update">
+        <div class="modal-dialog">
+            <div class="modal-content" style="">
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">更新日志</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 日志主体 -->
+                <div class="modal-body">
+                    <h6>#Alpha 0.1.3</h6>
+                    20201019 完成了“历史记录”、“流畅模式”的设置，增加用户首次使用的判断。
+                    <hr />
+
+                    <h6>#Alpha 0.1.2</h6>
+                    20201012 可自由切换百度、bing、Google的搜索引擎，并开始使用localStorage存储用户的设置信息。
+                    <hr />
+
+                    <h6>#Alpha 0.1.1</h6>
+                    20201006 页面前端样式设计开发完成，一个静态的起始页已经成型，包含了百度、bing、Google三款搜索引擎，快速链接 ，每日金句，响应式设计以及更多的细节动画，和最基本的设置窗口。
+                    <hr />
+
+                    <h6>#Alpha 0.1.0</h6>
+                    20201005 脑袋萌生了我要做一款浏览器起始页的想法。2020年10月05日，梦想开始的地方。
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Suggest">
+        <div class="modal-dialog">
+            <div class="modal-content" style="">
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">帮助</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <h6>出现卡顿</h6>
+                    如果您的页面再完成一些动画时，出现卡顿现象，请在常规设置中打开“低性能模式”。
+                    <hr />
+                    <h6>如何设置为浏览器默认新界面</h6>
+                    浏览器-设置-新标签页，将本站添加进去就可以了。
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 常规设置主体 -->
+    <div class="modal fade" id="Config">
+        <div class="modal-dialog">
+            <div class="modal-content" style="">
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">常规设置</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <div class="config_out" id="config_fluency">
+                        <h6>流畅模式</h6>
+                        <div class="config_box">
+                            <span></span>
+                        </div>
+                    </div>
+                    关闭后，点击搜索框后不再有背景虚化，如果您的页面再完成一些动画时，出现卡顿现象，请在常规设置中打开“流畅模式”。
+                    <hr />
+
+                    <div class="config_out" id="config_history">
+                        <h6>搜索历史</h6>
+                        <div class="config_box">
+                            <span></span>
+                        </div>
+                    </div>
+                    搜索框下可记录搜索历史，能够手动清除，也可以永久关闭。
+                    <hr />
+
+
+                    <h6>如何设置为浏览器默认新界面</h6>
+                    浏览器-设置-新标签页，将本站添加进去就可以了。
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="bdMapBox" style="display:none;"></div> -->
+    <!-- <div id="bdMapBox2" style="width: 0;height: 0;overflow: hidden;"></div> -->
+    <div id="weather_forvue">
+        <div class="weather" id="weather" data-toggle="modal" data-target="#weather_forcast">
+            <div class="weather_left">
+                <div class="weather_out">
+                    <img src="" id="weather_img" />
+                    <!-- <span class="weather_type"> {{type}} </span> -->
+                    <span class="weather_type"> {{temp}} </span>
+                    <span class="weather_c">℃</span>
+                </div>
+                <p class="forcast">{{temp_low}}℃-{{temp_high}}℃</p>
+            </div>
+            <div class="weather_right">
+                {{cityName}}
+            </div>
+        </div>
+
+        <!-- 天气预报 -->
+        <div class="modal fade" id="weather_forcast">
+            <div class="modal-dialog">
+                <div class="modal-content weather_modal-content">
+                    <!-- 模态框头部 -->
+                    <!-- <div class="modal-header">
 						<h4 class="modal-title">未来一周天气预报</h4>
 					</div> -->
-		
-					<!-- 模态框主体 -->
-					<div class="modal-body">
-						<p style="text-align: center;font-size: 60px;line-height: 60px;margin: 0px;">
-							{{temp}} <span style="font-size: 18px;position: relative;bottom: 27px;">℃ </span> 
-						</p>
-						<p style="text-align: center;margin: 0;line-height: 20px;">
-							{{temp_high}}℃ <span style="color: #a7a7a7;">/ {{temp_low}}℃</span> 
-						</p>
-						<p style="text-align: center;line-height: 20px;">
-							{{type}} &nbsp;&nbsp;  {{cityName}}
-						</p>
-						<ul>
-							<li v-for="item in forcastList" class="weather_forcast_list">
-								<span class="weather_forcast_date">{{item.date}}</span>
-								<span class="weather_forcast_week">{{item.week}}</span>
-								<span class="weather_forcast_type">{{item.text_day}}</span>
-								<span class="weather_forcast_temp">{{item.high}}℃ / {{item.low}}℃</span>
-							</li>
-						</ul>
-						
-						<p class="weather_uptime">
-							更新于：{{uptime}}
-						</p>
-					</div>
-		
-					<!-- 模态框底部 -->
-					<!-- <div class="modal-footer">
+
+                    <!-- 模态框主体 -->
+                    <div class="modal-body">
+                        <p style="text-align: center;font-size: 60px;line-height: 60px;margin: 0px;">
+                            {{temp}} <span style="font-size: 18px;position: relative;bottom: 27px;">℃ </span>
+                        </p>
+                        <p style="text-align: center;margin: 0;line-height: 20px;">
+                            {{temp_high}}℃ <span style="color: #a7a7a7;">/ {{temp_low}}℃</span>
+                        </p>
+                        <p style="text-align: center;line-height: 20px;">
+                            {{type}} &nbsp;&nbsp; {{cityName}}
+                        </p>
+                        <ul>
+                            <li v-for="item in forcastList" class="weather_forcast_list">
+                                <span class="weather_forcast_date">{{item.date}}</span>
+                                <span class="weather_forcast_week">{{item.week}}</span>
+                                <span class="weather_forcast_type">{{item.text_day}}</span>
+                                <span class="weather_forcast_temp">{{item.high}}℃ / {{item.low}}℃</span>
+                            </li>
+                        </ul>
+
+                        <p class="weather_uptime">
+                            更新于：{{uptime}}
+                        </p>
+                    </div>
+
+                    <!-- 模态框底部 -->
+                    <!-- <div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
 					</div> -->
-		
-				</div>
-			</div>
-		</div>
-</div>
-		<script type="text/javascript">
-			// 百度地图API功能
-			new Vue({
-				el: '#weather_forvue',
-				data: {
-					cityName:'',
-					type: '',
-					temp: '',
-					temp_low: '',
-					temp_high: '',
-					uptime:'',
-					
-					forcastList:[]
-					// localCity: cityName,
-					// weatherList: []
-				},
-				mounted:function(){
-					var that = this;
 
-					axios
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        // 百度地图API功能
+        new Vue({
+            el: '#weather_forvue',
+            data: {
+                cityName: '',
+                type: '',
+                temp: '',
+                temp_low: '',
+                temp_high: '',
+                uptime: '',
 
-						.get('http://foresttrees.cn/getweather.php')
-						.then(function(response) {
-							// console.log(response.data.result);
+                forcastList: []
+                    // localCity: cityName,
+                    // weatherList: []
+            },
+            mounted: function() {
+                var that = this;
 
-							var responsetype = response.data.result.now.text;
-							switch (responsetype) {
-								case '霾':
-									$('#weather_img').attr('src', 'weatherImg/haze.png');
-									break;
-								case "晴":
-									$('#weather_img').attr('src', 'weatherImg/clear.png');
-									break;
-								case "多云":
-									$('#weather_img').attr('src', 'weatherImg/cloudy.png');
-									break;
-								case "阴":
-									$('#weather_img').attr('src', 'weatherImg/noclear.png');
-									break;
-								default:
-									$('#weather_img').attr('src', 'weatherImg/error.png');
-							}
-							that.cityName = response.data.result.location.city;
-							that.type = response.data.result.now.text;
-							that.temp = response.data.result.now.temp;
-							that.temp_low = response.data.result.forecasts[0].low;
-							that.temp_high = response.data.result.forecasts[0].high;
-							
-							var uptimeold = response.data.result.now.uptime;
-							
-							that.uptime = uptimeold.substr(8,2 )+":"+uptimeold.substr(10,2 );
-							
-							that.forcastList = response.data.result.forecasts;
-							
-							$(".weather").css("cursor", "pointer");
-							$(".weather").css("opacity", "1");
-						})
-						.catch(function(error) { // 请求失败处理
-							console.log(error);
-						});
-				}
-			})
-		</script>
+                axios
 
-		<div class="copyright">
-			<div class="copyright_content">
-				<!-- <div class="copyright_span1"></div> -->
-				<a href="https://github.com/ForestTrees/foresttrees.github.io">远山起始页 © 2020 山林小树</a>
-			</div>
-		</div>
-	</body>
+                    .get('http://foresttrees.cn/getweather.php')
+                    .then(function(response) {
+                        // console.log(response.data.result);
+
+                        var responsetype = response.data.result.now.text;
+                        switch (responsetype) {
+                            case '霾':
+                                $('#weather_img').attr('src', 'weatherImg/haze.png');
+                                break;
+                            case "晴":
+                                $('#weather_img').attr('src', 'weatherImg/clear.png');
+                                break;
+                            case "多云":
+                                $('#weather_img').attr('src', 'weatherImg/cloudy.png');
+                                break;
+                            case "阴":
+                                $('#weather_img').attr('src', 'weatherImg/noclear.png');
+                                break;
+                            default:
+                                $('#weather_img').attr('src', 'weatherImg/error.png');
+                        }
+                        that.cityName = response.data.result.location.city;
+                        that.type = response.data.result.now.text;
+                        that.temp = response.data.result.now.temp;
+                        that.temp_low = response.data.result.forecasts[0].low;
+                        that.temp_high = response.data.result.forecasts[0].high;
+
+                        var uptimeold = response.data.result.now.uptime;
+
+                        that.uptime = uptimeold.substr(8, 2) + ":" + uptimeold.substr(10, 2);
+
+                        that.forcastList = response.data.result.forecasts;
+
+                        $(".weather").css("cursor", "pointer");
+                        $(".weather").css("opacity", "1");
+                    })
+                    .catch(function(error) { // 请求失败处理
+                        console.log(error);
+                    });
+            }
+        })
+    </script>
+
+    <div class="copyright">
+        <div class="copyright_content">
+            <!-- <div class="copyright_span1"></div> -->
+            <a href="https://github.com/ForestTrees/foresttrees.github.io">远山起始页 © 2020 山林小树</a>
+        </div>
+    </div>
+</body>
+
 </html>
