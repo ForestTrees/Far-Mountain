@@ -9,7 +9,7 @@
 
 2、将旧页面删除，再添加新页面；
 
-3、在url栏输入网址http://far-mountain.foresttrees.cn/，保存即可。
+3、在url栏输入网址`http://far-mountain.foresttrees.cn/`，保存即可。
 
 ## 更新日志
 **beta 0.2.10-20210218**
