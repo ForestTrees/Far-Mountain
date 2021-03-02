@@ -1,4 +1,13 @@
 div::-webkit-scrollbar {
+<<<<<<< HEAD
+    width: 0;
+}
+
+html {
+    overflow: hidden !important;
+    /* 黑白模式 */
+    /* 	filter:grayscale(100%);
+=======
 	width: 0;
 }
 
@@ -6,6 +15,7 @@ html {
 	overflow: hidden !important;
 	/* 黑白模式 */
 /* 	filter:grayscale(100%);
+>>>>>>> 66d4b3f0f49352059584eb46d116c9af604b9255
 	　　-webkit-filter:grayscale(100%);
 	　　-moz-filter:grayscale(100%);
 	　　-ms-filter:grayscale(100%);
@@ -15,6 +25,522 @@ html {
 }
 
 body {
+<<<<<<< HEAD
+    overflow: hidden;
+    margin: 0;
+    /* height: 100%; */
+    transition: all 0.5s;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 信息提示框 */
+
+.alert_contont {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    opacity: 0;
+    z-index: 1052;
+}
+
+.alert {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* 背景图 */
+
+.background_img {
+    display: block;
+    opacity: 1;
+    /* transform: scale(1.1); */
+    z-index: -3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s, transform .25s, filter .25s;
+    backface-visibility: hidden;
+    /* filter: blur(2px); */
+    box-sizing: border-box;
+    touch-action: pan-y;
+}
+
+.cover {
+    z-index: -1;
+    opacity: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0.3) 166%);
+    transition: all .25s;
+}
+
+
+/* 背景图结束 */
+
+
+/* 搜索框 */
+
+form {
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .search {
+        width: 530px !important;
+    }
+    .search_input {
+        width: 530px !important;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .search {
+        width: 400px !important;
+    }
+    .search_input {
+        width: 400px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .search {
+        width: 300px !important;
+    }
+    .search_input {
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .search {
+        width: 200px !important;
+    }
+    .search_input {
+        width: 200px !important;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .search {
+        width: 150px !important;
+    }
+    .search_input {
+        width: 150px !important;
+    }
+}
+
+.search {
+    width: 660px;
+    height: 45px;
+    margin: 100px auto 0px auto;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    left: 50px;
+    transition: all 0.3s;
+    /* overflow: hidden; */
+}
+
+.search_input {
+    width: 660px;
+    height: 45px;
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 0 55px 0px 10px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.search_logo_list {
+    width: 100px;
+    height: 45px;
+    position: absolute;
+    left: -110px;
+    overflow: hidden;
+}
+
+.search_logo_list_mov {
+    height: 135px;
+    position: relative;
+    /* bottom: -100px; */
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+#search_logo {
+    width: 100px;
+    height: 45px;
+    /* position: absolute;
+	left: -110px; */
+    outline: none;
+    border: none;
+    appearance: none;
+    background-size: 100px 45px;
+    color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.search_select {
+    width: 100px;
+    /* height: 100px; */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: -110px;
+    top: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search_select li {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 30px;
+    padding: 0 10px;
+    height: 0px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.search_select li:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.search_btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    background-image: url(../img/search.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 15px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    top: 0;
+    /* padding: 12.5px ; */
+}
+
+
+/* 搜索框结束 */
+
+
+/* 常用网址导航 */
+
+.webs {
+    width: 760px;
+    margin: 80px auto 0 auto;
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+.webs_li {
+    width: 80px;
+    height: 80px;
+    margin: 36px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.web_title {
+    text-align: center;
+}
+
+.webs_flex {
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    color: white;
+}
+
+.webs_li_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    transition: all 0.3s;
+}
+
+.webs_li:hover .webs_li_content {
+    bottom: 80px !important;
+}
+
+.webs_li i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.webs_li:hover {
+    background-color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .webs {
+        width: 630px !important;
+    }
+    .webs_li {
+        margin: 23px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .webs {
+        width: 500px !important;
+    }
+    .webs_li {
+        width: 79px;
+        height: 79px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .webs {
+        width: 400px !important;
+    }
+    .webs_li {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .webs {
+        width: 300px !important;
+    }
+    .webs_li {
+        margin: 20px;
+        height: 60px;
+        width: 60px;
+    }
+    .webs_li i {
+        margin: 10px;
+    }
+    .webs_li:hover .webs_li_content {
+        bottom: 60px !important;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .webs {
+        width: 250px !important;
+    }
+    .webs_li {
+        margin: 11.5px;
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.webs_li {
+    margin-bottom: 5px;
+}
+
+.webs_li img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* 常用网址导航结束 */
+
+
+/* 每日语录 */
+
+.word {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 400px;
+    z-index: -1;
+    opacity: 0;
+    padding: 20px 0;
+    /* background-color: white; */
+    transition: background-color 0.5s;
+}
+
+.word_p {
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    transition: color 0.5s;
+}
+
+.word:hover {
+    /* background-image: linear-gradient(to right, rgba(255,255,255,1) , rgba(255,255,255,0)); */
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: background-color 0.5s;
+}
+
+.word:hover .word_p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* 每日语录结束 */
+
+
+/* 设置 */
+
+.setting {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1049;
+}
+
+#setting_logo {
+    overflow: hidden;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.setting_contant {
+    width: 40px;
+}
+
+.setting img {
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.setting_lists {
+    float: right;
+    /* margin-top: 20px; */
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    overflow: hidden;
+    transform: scale(0);
+    transform-origin: 100% 0px;
+    transition: all 0.3s;
+}
+
+.setting_lists a {
+    color: rgba(0, 0, 0, 0.7);
+    /* text-align: right; */
+    line-height: 35px;
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    min-width: 150px;
+    font-size: 14px;
+}
+
+.setting_lists a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.setting_contant:hover .setting_lists {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.pay_img {
+    width: 50%;
+    float: left;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+
+.modal-body {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.modal-body h6 {
+    font-weight: bold;
+    /* float: left; */
+}
+
+
+/* 设置结束 */
+
+.config_out {
+    display: flexbox;
+    height: 27px;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.config_out h6 {
+    display: block;
+    float: left;
+}
+
+.config_box {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px rgb(141, 141, 141);
+    float: right;
+    overflow: hidden;
+    /* position: absolute; */
+}
+
+.config_box span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: black;
+    margin: 4px;
+    position: relative;
+    transition: left 0.2s;
+    left: 0px;
+}
+
+
+/* 快速链接 */
+
+.link_li {
+    height: 40px;
+    box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.13), 0px 0px 2.9px rgba(0, 0, 0, 0.11);
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    /* border: #000000 1px solid; */
+}
+
+.link_li2 {
+    height: 0px;
+    box-shadow: 0px 1.6px 3.6px rgba(0, 0, 0, 0.13), 0px 0px 2.9px rgba(0, 0, 0, 0.11);
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s;
+    /* border: #000000 1px solid; */
+=======
 	overflow: hidden;
 	margin: 0;
 	/* height: 100%; */
@@ -550,18 +1076,62 @@ form {
 
 	transition: all 0.3s;
 	/* border: #000000 1px solid; */
+>>>>>>> 66d4b3f0f49352059584eb46d116c9af604b9255
 }
 
 .link_li img,
 .link_li2 img {
+<<<<<<< HEAD
+    width: 16px;
+    height: 16px;
+    margin: 12px;
+    float: left;
+=======
 	width: 16px;
 	height: 16px;
 	margin: 12px;
 	float: left;
+>>>>>>> 66d4b3f0f49352059584eb46d116c9af604b9255
 }
 
 .link_li input,
 .link_li2 input {
+<<<<<<< HEAD
+    height: 40px;
+}
+
+.set_link_img {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 !important;
+}
+
+.link_title {
+    font-weight: bold;
+    display: block;
+    width: 30%;
+    float: left;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+}
+
+.link_title:focus {
+    outline: none;
+}
+
+.link_url {
+    display: block;
+    width: 44%;
+    float: left;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+}
+
+.link_url:focus {
+    outline: none;
+=======
 	height: 40px;
 }
 
@@ -596,10 +1166,21 @@ form {
 
 .link_url:focus {
 	outline: none;
+>>>>>>> 66d4b3f0f49352059584eb46d116c9af604b9255
 }
 
 .link_delete,
 .link_delete2 {
+<<<<<<< HEAD
+    width: 24px;
+    height: 24px;
+    border: none;
+    margin: 8px;
+    padding: 6px;
+    float: right;
+    background-color: white;
+    cursor: pointer;
+=======
 	width: 24px;
 	height: 24px;
 	border: none;
@@ -608,19 +1189,126 @@ form {
 	float: right;
 	background-color: white;
 	cursor: pointer;
+>>>>>>> 66d4b3f0f49352059584eb46d116c9af604b9255
 }
 
 .link_delete:hover,
 .link_delete2:hover {
+<<<<<<< HEAD
+    background-color: rgb(239, 239, 239);
+}
+
+button:focus {
+    outline: none;
+=======
 	background-color: rgb(239, 239, 239);
 }
 
 button:focus {
 	outline: none;
+>>>>>>> 66d4b3f0f49352059584eb46d116c9af604b9255
 }
 
 .link_delete svg,
 .link_delete2 svg {
+<<<<<<< HEAD
+    position: relative;
+    top: -11px;
+}
+
+
+/* 底部版权 */
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.copyright_content {
+    height: 20px;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.copyright_span1 {
+    background-color: white;
+    filter: blur(2px);
+    opacity: 0.2;
+    width: 100%;
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    height: 20px;
+    width: 210px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* 底部版权结束 */
+
+
+/* 通知公告 */
+
+.announcement {
+    width: 200px;
+    /* height: 30px; */
+    /* line-height: 30px; */
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+    transition: 0.3s;
+}
+
+.con_announcement {
+    padding: 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.close_announcement {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.announcement:hover .close_announcement {
+    opacity: 1;
+}
+
+.announcement h6 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.announcement p {
+    margin: 0;
+    font-size: 14px;
+=======
 	position: relative;
 	top: -11px;
 }
@@ -720,10 +1408,120 @@ button:focus {
 .announcement p {
 	margin: 0;
 	font-size: 14px;
+>>>>>>> 66d4b3f0f49352059584eb46d116c9af604b9255
 }
 
 
 /* 天气信息 */
+<<<<<<< HEAD
+
+.weather {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    color: white;
+    cursor: default;
+    /* display: none; */
+    opacity: 0;
+    transition: 1s;
+}
+
+.weather_left {
+    float: left;
+    padding-right: 12px;
+    border-right: solid 1px white;
+}
+
+.weather_out {
+    height: 30px;
+    line-height: 30px;
+}
+
+#weather_img {
+    height: 30px;
+    float: left;
+    /* margin: 3px 0px; */
+}
+
+.weather_type {
+    font-size: 24px;
+    display: block;
+    padding-left: 10px;
+    float: left;
+}
+
+.weather_c {
+    font-size: 14px;
+    display: block;
+    float: left;
+    padding-left: 4px;
+}
+
+.forcast {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 8px;
+    color: rgb(222, 214, 214);
+    margin-bottom: 0px;
+}
+
+.weather_right {
+    float: left;
+    line-height: 56px;
+    margin-left: 12px;
+}
+
+.weather_forcast_list {
+    overflow: hidden;
+    padding: 0 5%;
+    line-height: 40px;
+    /* border-bottom: solid 1px white; */
+}
+
+.weather_forcast_list span {
+    display: block;
+    float: left;
+}
+
+.weather_forcast_date {
+    width: 25%;
+}
+
+.weather_forcast_week {
+    text-align: center;
+    width: 15%;
+}
+
+.weather_forcast_type {
+    text-align: center;
+    width: 40%;
+}
+
+.weather_forcast_temp {
+    text-align: right;
+    width: 20%;
+}
+
+.weather_modal-content {
+    color: white;
+    /* background-image: url(../img/weather_bg.png);*/
+    background-color: #30466f;
+    background-size: cover;
+    padding: 20px 0px;
+}
+
+.weather_uptime {
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    bottom: -20px;
+    color: #ffffff2b;
+}
+=======
 .weather {
 	position: absolute;
 	top: 30px;
@@ -832,3 +1630,4 @@ button:focus {
 	bottom: -20px;
 	color: #ffffff2b;
 }
+>>>>>>> 66d4b3f0f49352059584eb46d116c9af604b9255
