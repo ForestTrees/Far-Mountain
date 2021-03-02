@@ -1,4 +1,4 @@
-# 远山起始页--[访问](https://foresttrees.github.io/Far-Mountain.github.io/)
+# 远山起始页--[访问](http://far-mountain.foresttrees.cn/)
 ## 源码不得转载
 
 「远山起始页」是一款由山林小树独立开发的浏览器起始页。简洁、大气、高效、自定义强是我竭尽全力追求的理念，也是设计这款起始页的初衷。
