@@ -1,5 +1,5 @@
 // 小贴士部分
-var notice_id = "20210217"; //id编号，通产为发布日期
-var notice_passage = "更新搜索页的“每日一句”，每次刷新时随机显示不同的诗句、短句" //小贴士内容
+var notice_id = "20210302"; //id编号，通产为发布日期
+var notice_passage = "在“设置”中添加了“建议与反馈”模块" //小贴士内容
 
-var release = "beta 0.2.11" //当前版本
+var release = "beta 0.2.12" //当前版本
