@@ -2,4 +2,4 @@
 var notice_id = "20210217"; //id编号，通产为发布日期
 var notice_passage = "更新搜索页的“每日一句”，每次刷新时随机显示不同的诗句、短句" //小贴士内容
 
-var release = "beta 0.2.10" //当前版本
+var release = "beta 0.2.11" //当前版本
