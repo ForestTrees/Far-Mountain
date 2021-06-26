@@ -1,58 +1,186 @@
-var GLzGqMSn1 = localStorage['\x67\x65\x74\x49\x74\x65\x6d']("\x4c\x69\x6e\x6b");
-var tIssoLY2 = JSON['\x70\x61\x72\x73\x65'](GLzGqMSn1);
+var json_se = localStorage.getItem("Link");
+var json_se_Obj = JSON.parse(json_se);
+// console.log(json_se_Obj);
 
-function getFrom() { var DS$sPreDV3 = [link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x30'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x31'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x32'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x33'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x34'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x35'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x36'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x37'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x38'], link_webs['\x77\x65\x62\x5f\x6e\x61\x6d\x65\x39'], ]; var tI_4 = [link_webs['\x75\x72\x6c\x30'], link_webs['\x75\x72\x6c\x31'], link_webs['\x75\x72\x6c\x32'], link_webs['\x75\x72\x6c\x33'], link_webs['\x75\x72\x6c\x34'], link_webs['\x75\x72\x6c\x35'], link_webs['\x75\x72\x6c\x36'], link_webs['\x75\x72\x6c\x37'], link_webs['\x75\x72\x6c\x38'], link_webs['\x75\x72\x6c\x39'], ]; var NtQG5 = 0; var bQXcC6 = 0; var e7 = new window["\x41\x72\x72\x61\x79"](); while (NtQG5 < 10) { if (DS$sPreDV3[NtQG5]) { if (DS$sPreDV3[NtQG5]['\x76\x61\x6c\x75\x65'] != "" || tI_4[NtQG5]['\x76\x61\x6c\x75\x65'] != "") { var npthFUzL8 = DS$sPreDV3[NtQG5]['\x76\x61\x6c\x75\x65']; var SCW9 = tI_4[NtQG5]['\x76\x61\x6c\x75\x65']; var Oys10 = SCW9['\x73\x70\x6c\x69\x74']("\x2f"); if (Oys10[0] + Oys10[1] + "\x2f\x2f" == "\x68\x74\x74\x70\x73\x3a\x2f\x2f" || Oys10[0] + Oys10[1] + "\x2f\x2f" == "\x68\x74\x74\x70\x3a\x2f\x2f") { Oys10 = Oys10[0] + Oys10[1] + "\x2f\x2f" + Oys10[2] + "\x2f\x66\x61\x76\x69\x63\x6f\x6e\x2e\x69\x63\x6f";
-                    e7[bQXcC6] = { "\x69\x64": bQXcC6, "\x6e\x61\x6d\x65": npthFUzL8, "\x75\x72\x6c": SCW9, "\x66\x61\x76\x69\x63\x6f\x6e": Oys10, };
-                    NtQG5++;
-                    bQXcC6++;
-                    console['\x6c\x6f\x67']("\u7b2c" + bQXcC6 + "\u4e2a") } else { webChack();
-                    NtQG5++;
-                    console['\x6c\x6f\x67']("\u683c\u5f0f\u4e0d\u6b63\u786e"); return false } } else { console['\x6c\x6f\x67']("\u7a7a\u503c");
-                NtQG5++ } } else { console['\x6c\x6f\x67']("\u4e0d\u5b58\u5728");
-            NtQG5++ } }
-    localStorage['\x72\x65\x6d\x6f\x76\x65\x49\x74\x65\x6d']('\x4c\x69\x6e\x6b'); var hL11 = JSON['\x73\x74\x72\x69\x6e\x67\x69\x66\x79'](e7);
-    localStorage['\x73\x65\x74\x49\x74\x65\x6d']("\x4c\x69\x6e\x6b", hL11);
-    location['\x72\x65\x6c\x6f\x61\x64']() };
-var GLzGqMSn1 = localStorage['\x67\x65\x74\x49\x74\x65\x6d']("\x4c\x69\x6e\x6b");
-var tIssoLY2 = JSON['\x70\x61\x72\x73\x65'](GLzGqMSn1);
-var SbvV_Nzl14 = tIssoLY2['\x6c\x65\x6e\x67\x74\x68'];
-var $vHCiuLY15 = SbvV_Nzl14;
+function getFrom() {
+	// var name_arr = new Array();
+	// var url_arr = new Array();
+	var name_arr = [link_webs.name0, link_webs.name1, link_webs.name2, link_webs.name3, link_webs.name4, link_webs.name5,
+		link_webs.name6, link_webs.name7, link_webs.name8, link_webs.name9,
+	];
+	var url_arr = [link_webs.url0, link_webs.url1, link_webs.url2, link_webs.url3, link_webs.url4, link_webs.url5,
+		link_webs.url6, link_webs.url7, link_webs.url8, link_webs.url9,
+	];
+	// console.warn(name_arr[9]);
+	var i = 0;
+	var ii = 0;
+	var data = new Array();
+	while (i < 10) {
+		if (name_arr[i]) {//判断是否存在
+			if (name_arr[i].value != "" || url_arr[i].value != "") {//判断值是否为空
+				var name = name_arr[i].value;
+				var url = url_arr[i].value;
+				var favicon = url.split("/");
+				// if (favicon[0] + favicon[1] + "//" == "https://"||favicon[0] + favicon[1] + "//" == "http://") {
+				//判断网址格式是否合法
+				if (favicon[0] + favicon[1] + "//" == "https://" || favicon[0] + favicon[1] + "//" == "http://") {
+					favicon = favicon[0] + favicon[1] + "//" + favicon[2] + "/favicon.ico";
+					data[ii] = {
+						"id": ii,
+						"name": name,
+						"url": url,
+						"favicon": favicon,
+					};
+					// alert(name_arr[i].value);
+					// console.log(name_arr[i]);
 
-function addLink() { if ($vHCiuLY15 < 10) { console['\x6c\x6f\x67']($vHCiuLY15); var Unz16 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74']("\x6c\x69"); var aX$Df17 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74']("\x69\x6d\x67"); var w_qzQdQE18 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74']("\x69\x6e\x70\x75\x74"); var stcIqRyfl19 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74']("\x69\x6e\x70\x75\x74"); var zqYGuVTiD20 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74']("\x64\x69\x76"); var or21 = window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74']("\x69\x6d\x67");
-        Unz16['\x63\x6c\x61\x73\x73\x4e\x61\x6d\x65'] = "\x6c\x69\x6e\x6b\x5f\x6c\x69\x32";
-        aX$Df17['\x73\x72\x63'] = "\x2e\x2f\x69\x6d\x67\x2f\x6e\x65\x77\x2e\x70\x6e\x67";
-        w_qzQdQE18['\x63\x6c\x61\x73\x73\x4e\x61\x6d\x65'] = "\x6c\x69\x6e\x6b\x5f\x74\x69\x74\x6c\x65";
-        w_qzQdQE18['\x74\x79\x70\x65'] = "\x74\x65\x78\x74"; var nGjvQY22 = "\x77\x65\x62\x5f\x6e\x61\x6d\x65" + $vHCiuLY15;
-        w_qzQdQE18['\x6e\x61\x6d\x65'] = nGjvQY22;
-        w_qzQdQE18['\x70\x6c\x61\x63\x65\x68\x6f\x6c\x64\x65\x72'] = "\u586b\u5199\u7f51\u5740\u6807\u9898"; var _KqHoo23 = "\x75\x72\x6c" + $vHCiuLY15;
-        stcIqRyfl19['\x63\x6c\x61\x73\x73\x4e\x61\x6d\x65'] = "\x6c\x69\x6e\x6b\x5f\x75\x72\x6c";
-        stcIqRyfl19['\x74\x79\x70\x65'] = "\x74\x65\x78\x74";
-        stcIqRyfl19['\x6e\x61\x6d\x65'] = _KqHoo23;
-        stcIqRyfl19['\x70\x6c\x61\x63\x65\x68\x6f\x6c\x64\x65\x72'] = "\u586b\u5199\u4e3b\u7f51\u5740";
-        zqYGuVTiD20['\x63\x6c\x61\x73\x73\x4e\x61\x6d\x65'] = "\x6c\x69\x6e\x6b\x5f\x64\x65\x6c\x65\x74\x65";
-        or21['\x63\x6c\x61\x73\x73\x4e\x61\x6d\x65'] = "\x73\x65\x74\x5f\x6c\x69\x6e\x6b\x5f\x69\x6d\x67";
-        or21['\x73\x72\x63'] = "\x2e\x2f\x69\x6d\x67\x2f\x64\x65\x6c\x65\x74\x65\x2e\x70\x6e\x67";
-        w_qzQdQE18['\x61\x75\x74\x6f\x63\x6f\x6d\x70\x6c\x65\x74\x65'] = "\x6f\x66\x66";
-        stcIqRyfl19['\x61\x75\x74\x6f\x63\x6f\x6d\x70\x6c\x65\x74\x65'] = "\x6f\x66\x66";
-        zqYGuVTiD20['\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65']('\x6f\x6e\x63\x6c\x69\x63\x6b', '\x74\x65\x73\x74\x28\x74\x68\x69\x73\x29');
-        zqYGuVTiD20['\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64'](or21);
-        Unz16['\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64'](aX$Df17);
-        Unz16['\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64'](w_qzQdQE18);
-        Unz16['\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64'](stcIqRyfl19);
-        Unz16['\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64'](zqYGuVTiD20);
-        window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64']("\x64\x6f\x6d\x5f\x61\x64\x64")['\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64'](Unz16);
-        $('\x2e\x6c\x69\x6e\x6b\x5f\x6c\x69\x32')['\x61\x6e\x69\x6d\x61\x74\x65']({ height: '\x34\x30\x70\x78' }, 30, '\x6c\x69\x6e\x65\x61\x72') } else { $vHCiuLY15--;
-        limit() }
-    $vHCiuLY15++ }
-$(window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"])['\x72\x65\x61\x64\x79'](function() { $('\x2e\x6c\x69\x6e\x6b\x5f\x64\x65\x6c\x65\x74\x65')['\x63\x6c\x69\x63\x6b'](function() { $vHCiuLY15--;
-        console['\x6c\x6f\x67']("\u5b58\u5728" + $vHCiuLY15);
-        $(this)['\x73\x69\x62\x6c\x69\x6e\x67\x73']("\x69\x6e\x70\x75\x74")['\x61\x74\x74\x72']("\x76\x61\x6c\x75\x65", "");
-        $(this)['\x73\x69\x62\x6c\x69\x6e\x67\x73']()['\x61\x74\x74\x72']("\x6e\x61\x6d\x65", "\x6e\x6f\x6e\x65");
-        $(this)['\x70\x61\x72\x65\x6e\x74']()['\x63\x73\x73']({ "\x68\x65\x69\x67\x68\x74": "\x30", "\x6d\x61\x72\x67\x69\x6e": "\x30", }) }) });
+					i++;
+					ii++;
+					
+					console.log("第"+ii+"个");
+				} else {
+					// favicon = favicon[0]+"/favicon.ico";
+					// alert(favicon[0] + favicon[1]);
+					webChack();
+					i++;
+					console.log("格式不正确");
+					return false;
+					// break;
+				}
 
-function test(g_K24) { $(g_K24)['\x73\x69\x62\x6c\x69\x6e\x67\x73']()['\x76\x61\x6c']("");
-    $(g_K24)['\x70\x61\x72\x65\x6e\x74']()['\x61\x74\x74\x72']("\x63\x6c\x61\x73\x73", "\x6c\x69\x6e\x6b\x5f\x6c\x69");
-    $(g_K24)['\x73\x69\x62\x6c\x69\x6e\x67\x73']()['\x61\x74\x74\x72']("\x6e\x61\x6d\x65", "\x6e\x6f\x6e\x65");
-    $(g_K24)['\x70\x61\x72\x65\x6e\x74']()['\x63\x73\x73']({ "\x68\x65\x69\x67\x68\x74": "\x30", "\x6d\x61\x72\x67\x69\x6e": "\x30", });
-    $vHCiuLY15--;
-    console['\x6c\x6f\x67']("\u65b0\u589e" + $vHCiuLY15) }
+			} else {
+				console.log("空值");
+				i++;
+			}
+		} else {
+			// console.warn(name_arr[9]);
+			console.log("不存在");
+			i++;
+		}
+	}
+
+	localStorage.removeItem('Link'); //删掉旧存储
+	var se_data = JSON.stringify(data);
+	localStorage.setItem("Link", se_data);
+
+
+	// var json_se = localStorage.getItem("Link");
+	// var json_se_Obj = JSON.parse(json_se);
+	// console.log(json_se_Obj);
+	// alert(json_se_Obj);
+
+
+	location.reload();
+};
+
+var json_se = localStorage.getItem("Link");
+var json_se_Obj = JSON.parse(json_se);
+var json_se_Obj_length = json_se_Obj.length; //获取目前存在的数量；
+var exit_links_number = json_se_Obj_length;
+
+function addLink() {
+	
+	if (exit_links_number < 10) {
+
+		console.log(exit_links_number);
+
+		var li = document.createElement("li");
+		var img = document.createElement("img");
+		var input1 = document.createElement("input");
+		var input2 = document.createElement("input");
+		var button = document.createElement("div");
+		var img2 = document.createElement("img");
+		// var svg = document.createElement("svg");
+		// var path = document.createElement("path");
+
+		li.className = "link_li2";
+		img.src = "./img/new.png";
+		input1.className = "link_title";
+		input1.type = "text";
+		var input1_name = "name" + exit_links_number;
+		input1.name = input1_name;
+		input1.placeholder = "填写网址标题";
+		var input2_name = "url" + exit_links_number;
+
+		input2.className = "link_url";
+		input2.type = "text";
+		input2.name = input2_name;
+		input2.placeholder = "填写主网址";
+
+
+		button.className = "link_delete";
+		// button.click(test);
+		img2.className = "set_link_img";
+		img2.src = "./img/delete.png";
+
+		input1.autocomplete = "off";
+		input2.autocomplete = "off";
+		// svg.className= "c011521";
+		button.setAttribute('onclick', 'test(this)');
+		// input1.setAttribute('value','');
+		// input2.setAttribute('value','');
+		// svg.setAttribute('xmlns','http://www.w3.org/2000/svg');
+		// svg.setAttribute('width','12');
+		// svg.setAttribute('height','12');
+
+		// svg.viewBox = "0 0 2048 2048";
+		// svg.xmlns = "http://www.w3.org/2000/svg";
+		// svg.width = "12";
+		// svg.height = "12";
+		// path.setAttribute('d','M1115 1024l690 691-90 90-691-690-691 690-90-90 690-691-690-691 90-90 691 690 691-690 90 90-690 691z');
+		// path.setAttribute('fill','#8a8a8a');
+		// path.setAttribute ('p-id', '3041');
+
+		// svg.appendChild(path);
+		button.appendChild(img2);
+		li.appendChild(img);
+		li.appendChild(input1);
+		li.appendChild(input2);
+		li.appendChild(button);
+
+		document.getElementById("dom_add").appendChild(li);
+
+		$('.link_li2').animate({
+			height: '40px'
+		}, 30, 'linear');
+
+		// test().stop();
+		// test();
+	} else {
+		exit_links_number--;
+		// alert("超出最大限度");
+		limit();
+	}
+	exit_links_number++;
+}
+$(document).ready(function() {
+	$('.link_delete').click(function() {
+		exit_links_number--;
+		console.log("存在" + exit_links_number);
+		$(this).siblings("input").attr("value", "");
+		$(this).siblings().attr("name", "none");
+		$(this).parent().css({
+			"height": "0",
+			"margin": "0",
+		});
+	});
+});
+
+// $(document).ready(function() {
+function test(obj) {
+	// console.log("重构？？");
+	// $('.link_delete2').click(function() {
+	$(obj).siblings().val("");
+	$(obj).parent().attr("class", "link_li");
+	$(obj).siblings().attr("name", "none");
+	$(obj).parent().css({
+		"height": "0",
+		"margin": "0",
+		// "display": "none",
+	});
+	// $(this).parent().remove();
+	exit_links_number--;
+	console.log("新增" + exit_links_number);
+	// });
+}
+// });
