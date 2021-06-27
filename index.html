@@ -540,6 +540,12 @@
 					{{cityName}}
 				</div>
 			</div>
+			
+			<!-- 加载动画 -->
+			<div class="weather_spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
 
 			<!-- 天气预报 -->
 			<div class="modal fade" id="weather_forcast">
@@ -664,8 +670,11 @@
 
 							that.forcastList = response.data.result.forecasts;
 
+							
 							$(".weather").css("cursor", "pointer");
 							$(".weather").css("opacity", "1");
+							$(".weather_spinner").css("display", "none");
+							
 
 
 
