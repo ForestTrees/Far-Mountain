@@ -11,7 +11,7 @@ function getFrom() {
 	var url_arr = [link_webs.url0, link_webs.url1, link_webs.url2, link_webs.url3, link_webs.url4, link_webs.url5,
 		link_webs.url6, link_webs.url7, link_webs.url8, link_webs.url9,
 	];
-	// console.warn(name_arr[9]);
+	console.warn(name_arr);
 	var i = 0;
 	var ii = 0;
 	var data = new Array();
@@ -38,6 +38,7 @@ function getFrom() {
 					ii++;
 					
 					console.log("第"+ii+"个");
+					console.log(name);
 				} else {
 					// favicon = favicon[0]+"/favicon.ico";
 					// alert(favicon[0] + favicon[1]);
@@ -58,6 +59,8 @@ function getFrom() {
 			i++;
 		}
 	}
+	
+	// console.log(data);
 
 	localStorage.removeItem('Link'); //删掉旧存储
 	var se_data = JSON.stringify(data);
@@ -70,7 +73,7 @@ function getFrom() {
 	// alert(json_se_Obj);
 
 
-	location.reload();
+	// location.reload();
 };
 
 var json_se = localStorage.getItem("Link");

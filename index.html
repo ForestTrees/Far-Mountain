@@ -44,6 +44,7 @@
 		<script src="./js/alert.js"></script>
 		<script src="./js/config.js"></script>
 		<script src="./js/weather.js"></script>
+		<script src="./js/SentenceUpload.js"></script>
 
 
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -90,7 +91,7 @@
 
 
 		<!-- <img class="background_img" src="http://bing.getlove.cn/bingImage" /> -->
-		
+
 		<!-- 壁纸 -->
 		<img class="background_img" src="https://open.saintic.com/api/bingPic/" />
 		<!-- 建党百年壁纸 -->
@@ -175,7 +176,6 @@
 		</div>
 		<!-- 一言 -->
 		<script type="text/javascript">
-
 			new Vue({
 				el: '#word_forvue',
 				data: {
@@ -264,7 +264,7 @@
 											'\
 											onerror="this.src=\'./img/new.png\';this.οnerrοr=null"/>\
 											<input class="link_title" type="text" name=\
-											' + 'web_name' + i +
+											' + 'name' + i +
 											'\
 											value=\
 											 ' + json_se_Obj[i].name +
@@ -476,7 +476,33 @@
 						</div>
 						搜索框下可记录搜索历史，能够手动清除，也可以永久关闭。
 
+						<!-- <hr />
+						<div style="position: relative;">
+							<h6>关于一言</h6>
+							在搜索页面中，将会随机展示一句唯美句子。你也可以上传一些优美的文字，通过审核后，
+							你上传的这些内容也将随机展示在搜索页面。
+							<form id="postForm" action="http://1.116.210.189/upload.php" method="post"
+								onsubmit="javascript:return verify();">
+								<div class="form-group">
+									<textarea name="sentence" class="form-control senrence_textarea" rows="5"
+										id="comment"
+										placeholder="可以输入多条句子，并使用“&”隔开。例如：海内存知己，天涯若比邻。&举头望明月，低头思故乡。"></textarea>
+								</div>
+								<button style="width: 100%;" type="submit" class="btn btn-outline-info">上传</button>
 
+							</form>
+
+							<div class="sentence_upload_success">
+								<p class="text-success"><svg style="position: relative; top: -2px;" t="1626146110765" class="icon" viewBox="0 0 1024 1024"
+										version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2423" width="28"
+										height="28">
+										<path
+											d="M918.795922 356.854687c-21.798121-51.476314-52.909055-97.631021-92.514092-137.236058-39.605037-39.605037-85.862083-70.818309-137.236058-92.514092C635.727364 104.590046 579.236458 93.128123 520.903458 93.128123s-114.823906 11.461923-168.142315 33.976414c-51.476314 21.798121-97.631021 52.909055-137.236058 92.514092s-70.818309 85.862083-92.514092 137.236058C100.496502 410.173096 89.034579 466.664002 89.034579 524.997002s11.461923 114.823906 33.976414 168.142315c21.798121 51.476314 52.909055 97.631021 92.514092 137.236058 39.605037 39.605037 85.862083 70.818309 137.236058 92.514092 53.21607 22.514491 109.809314 33.976414 168.142315 33.976414s114.823906-11.461923 168.142315-33.976414c51.476314-21.798121 97.631021-52.909055 137.236058-92.514092 39.605037-39.605037 70.818309-85.862083 92.514092-137.236058 22.514491-53.21607 33.976414-109.809314 33.976414-168.142315S941.310414 410.173096 918.795922 356.854687zM520.903458 911.836898c-213.273636 0-386.839896-173.56626-386.839896-386.839896s173.56626-386.839896 386.839896-386.839896 386.839896 173.56626 386.839896 386.839896S734.177094 911.836898 520.903458 911.836898zM713.402359 378.141115 713.402359 378.141115c-9.210474-8.289426-23.537877-7.470718-31.827304 1.739756L466.971017 619.046172l-110.218669-98.859085c-9.210474-8.289426-23.537877-7.470718-31.827304 1.739756l0 0c-8.289426 9.210474-7.470718 23.537877 1.739756 31.827304l126.490506 113.391165c0.102339 0.102339 0.204677 0.102339 0.307016 0.204677 0.102339 0.102339 0.204677 0.204677 0.204677 0.204677l0 0c9.210474 8.289426 23.537877 7.470718 31.827304-1.739756l229.647811-255.948831C723.431541 400.757945 722.612832 386.430542 713.402359 378.141115z"
+											p-id="2424" fill="#28a745"></path>
+									</svg>&nbsp; 提交成功</p>
+							</div>
+
+						</div> -->
 
 
 					</div>
@@ -545,11 +571,11 @@
 					{{cityName}}
 				</div>
 			</div>
-			
+
 			<!-- 加载动画 -->
 			<div class="weather_spinner">
-			  <div class="double-bounce1"></div>
-			  <div class="double-bounce2"></div>
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
 			</div>
 
 			<!-- 天气预报 -->
@@ -675,11 +701,11 @@
 
 							that.forcastList = response.data.result.forecasts;
 
-							
+
 							$(".weather").css("cursor", "pointer");
 							$(".weather").css("opacity", "1");
 							$(".weather_spinner").css("display", "none");
-							
+
 
 
 
