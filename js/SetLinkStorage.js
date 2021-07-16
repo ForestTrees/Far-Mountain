@@ -73,7 +73,7 @@ function getFrom() {
 	// alert(json_se_Obj);
 
 
-	// location.reload();
+	location.reload();
 };
 
 var json_se = localStorage.getItem("Link");
