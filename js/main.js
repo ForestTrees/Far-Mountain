@@ -122,14 +122,14 @@ $(document).ready(function() {
 
 //侵权警告
 var domain = document.domain;
-if (domain != "far-mountain.foresttrees.cn") {
+if (domain != "far-mountain.leviosa.top") {
 	if (domain != "127.0.0.1") {
 		console.log(
-			"此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究"
+			"此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究"
 		);
 		var warns =
 			'<div style="width:100%;height:100%;background:red;font-size:22px;color:white;position:absolute;z-index:1000000">' +
-			"此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.foresttrees.cn/ 版权所有，盗版必究<br>" +
+			"此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>此页面存在侵权行为！！原作者：山林小树；原网址：http://far-mountain.leviosa.top/ 版权所有，盗版必究<br>" +
 			'</div>';
 		$("html").append(warns);
 	}
