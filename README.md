@@ -1,4 +1,4 @@
-# 远山起始页--[访问](http://far-mountain.foresttrees.cn/)
+# 远山起始页--[访问](http://far-mountain.leviosa.top/)
 
 「远山起始页」是一款由山林小树独立开发的浏览器起始页。简洁、大气、高效、自定义强是我竭尽全力追求的理念，也是设计这款起始页的初衷。
 
@@ -16,7 +16,7 @@
 
 2、将旧页面删除，再添加新页面；
 
-3、在url栏输入网址`http://far-mountain.foresttrees.cn/`，保存即可。
+3、在url栏输入网址`http://far-mountain.leviosa.top/`，保存即可。
 
 ## 更新日志
 **bata 0.2.16-20210716**
